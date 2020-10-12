@@ -347,6 +347,202 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "1b8eedfe-af1c-45d1-819b-6cf9a45364f2",
+    "name": "FUN-WELCOME",
+    "commands": [{
+      "id": "b339522f-9492-4fcf-8d06-af8074909ac5",
+      "comment": "",
+      "command": "open",
+      "target": "https://cs1632.appspot.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f14ab45d-77a1-4aca-a908-bf8f736a6b96",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c080c82-c843-4bee-9f6a-2a4270fee42e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//main/div/p",
+      "targets": [
+        ["css=.jumbotron > .lead", "css:finder"],
+        ["xpath=//main/div/p", "xpath:position"]
+      ],
+      "value": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it."
+    }, {
+      "id": "fd0c7d8e-e57a-436d-b4dc-e576b57efe0e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//i",
+      "targets": [
+        ["css=i", "css:finder"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,'- Brian W. Kernighan')]", "xpath:innerText"]
+      ],
+      "value": "- Brian W. Kernighan"
+    }]
+  }, {
+    "id": "9da4588c-e851-40bd-b113-67d31a22ebe4",
+    "name": "DEFECT1-FUN-FIB",
+    "commands": [{
+      "id": "bbab2c8e-abb0-4a73-8e81-2761513a5e2b",
+      "comment": "",
+      "command": "open",
+      "target": "/fib",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d72a0cc7-8bb5-4e96-827e-51f77a670148",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24c5a704-5aab-408f-929f-f174356192f7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='value']",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f8380fd-74a5-4b8a-b230-01e2a0a916bf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='value']",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "676cee21-941a-42eb-aa5d-68d7f99c5cdc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Submit']",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "454196ca-ed47-46ac-8050-803e7fd4d659",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Fibonacci of 5 is 5!')]", "xpath:innerText"]
+      ],
+      "value": "Fibonacci of 10 is 55!"
+    }]
+  }, {
+    "id": "ad010b03-6815-441e-9874-32212ec3f889",
+    "name": "DEFECT2-FUN-FACT",
+    "commands": [{
+      "id": "941f7b7c-017d-4850-a8af-3594e46f9c6c",
+      "comment": "",
+      "command": "open",
+      "target": "/fact",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e8fb0e2-26a8-4494-a552-50a377917d40",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f50d8b1-37e5-44b3-a81c-103738da6d9c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='value']",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "493df381-6b4c-4d95-8f6e-19e3091e5da4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='value']",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "INVALID"
+    }, {
+      "id": "5b2c7a30-c8e0-4474-aee2-470f3f5056bd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Submit']",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18b65fb4-8a89-433b-9749-2ebec9dcd50c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Factorial of 5 is 120!')]", "xpath:innerText"]
+      ],
+      "value": "Factorial of INVALID is 1!"
+    }]
+  }, {
+    "id": "aefdb4e4-b8b3-4619-8721-f30c6a679125",
+    "name": "DEFECT3-FUN-HELLO-TRAILING",
+    "commands": [{
+      "id": "751486b8-e54f-496b-8078-b357359cb01e",
+      "comment": "",
+      "command": "open",
+      "target": "/hello/Ja#zzy",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a742ed93-8bc6-4c99-9c40-ca24ece3273f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d295c1f0-9256-4cf4-ac5e-1e7f55210565",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Hello CS1632, from Dr. Ahn!')]", "xpath:innerText"]
+      ],
+      "value": "Hello CS1632, from Ja#zzy!"
+    }]
   }],
   "suites": [{
     "id": "7a514f4c-adae-43ca-9f29-bfabd7bd0a1b",
@@ -354,7 +550,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": []
+    "tests": ["9da4588c-e851-40bd-b113-67d31a22ebe4", "ad010b03-6815-441e-9874-32212ec3f889", "aefdb4e4-b8b3-4619-8721-f30c6a679125", "bb9d26d7-38ca-4a90-8b32-b45fb70b021a", "4183aafa-6d94-48ad-aa49-310ffa774a67", "c1bb8229-daa4-450f-88d5-ce7f63d6df81", "7d0b674f-0427-4356-9f6a-2f3fb5b2bdf4", "5357577c-5c8c-475b-9132-c5b768d902a5", "2da0c0ec-5a58-4dfc-81a4-019bacd3476b", "34c3e733-30bd-4d6c-a6db-4ab282df7867", "1b8eedfe-af1c-45d1-819b-6cf9a45364f2"]
   }],
   "urls": ["https://cs1632.appspot.com/", "https://cs1632.appspot.com/fact"],
   "plugins": []
